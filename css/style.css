@@ -277,6 +277,22 @@ section {
   background: #22252B;
   z-index: 99;
 }
+.wrapper .stt {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--emphasis);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.wrapper .stt ion-icon {
+  color: var(--emphasis);
+}
 
 header {
   position: relative;
@@ -304,23 +320,34 @@ header nav .logo a span {
 }
 header nav .nav-right ul {
   display: flex;
+  align-items: center;
   gap: 2em;
 }
+header nav .nav-right ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 header nav .nav-right ul li a, header nav .nav-right ul span {
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-family: "Fira Code";
+}
+header nav .nav-right ul span {
+  font-size: 1.1em;
+  font-weight: 500;
 }
 header nav .nav-right .hover-line::after {
   content: "";
+  position: absolute;
   display: block;
   width: 0%;
-  height: 2px;
+  height: 1px;
   margin-top: 15px;
   background: rgba(255, 255, 255, 0.338);
   transition: width 0.7s;
 }
 header nav .nav-right .hover-line:hover::after {
-  width: 100%;
+  width: 5%;
   transition: width 0.7s;
 }
 header .sticky {
@@ -359,10 +386,14 @@ header .header-content .desc {
 }
 header .header-content .desc p {
   color: rgba(255, 255, 255, 0.767);
-  font-size: 1.1em;
+  font-size: 0.9em;
   line-height: 1.3em;
   letter-spacing: 3px;
   font-weight: 200;
+}
+header .header-content .desc p strong {
+  font-weight: 600;
+  color: var(--emphasis);
 }
 header .header-content a {
   margin-top: 60px;
@@ -421,7 +452,7 @@ header .scroller {
 }
 .social .social-icons ion-icon:hover {
   color: var(--emphasis);
-  transform: translateY(-5px);
+  transform: scale(1.3);
 }
 
 footer {

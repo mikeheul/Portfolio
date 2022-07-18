@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         // Get the navbar
         let navbar = document.querySelector("nav");
         // Get the offset position of the navbar
-        let sticky = 120;
+        let sticky = 50;
         let mouse = document.querySelector(".mousey");
 
         // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
