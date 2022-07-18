@@ -41,7 +41,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - (section.clientHeight - (section.clientHeight*0.5));
-                console.log(pageYOffset);
                 const sectionHeight = section.clientHeight;
                 if(pageYOffset >= sectionTop) {
                     current = section.getAttribute('id');
