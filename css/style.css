@@ -486,6 +486,9 @@ header .scroller {
   border-radius: 10px;
   height: 600px;
 }
+.about .row {
+  align-items: center;
+}
 .about .col-2 {
   padding: 20px;
 }
