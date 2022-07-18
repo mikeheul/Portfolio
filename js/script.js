@@ -21,22 +21,45 @@ window.addEventListener("DOMContentLoaded", (event) => {
         viewFactor: 0.5
     });
 
-    window.onscroll = function() { myFunction()};
+    window.onscroll = function() { stickyNavHighlight()};
 
-        // Get the navbar
-        let navbar = document.querySelector("nav");
-        // Get the offset position of the navbar
+        const navbar = document.querySelector("nav");
+        const sections = document.querySelectorAll("section"); 
+        const navLi = document.querySelectorAll("nav ul li");
+        const mouse = document.querySelector(".mousey");
+
         let sticky = 50;
-        let mouse = document.querySelector(".mousey");
 
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
+        function stickyNavHighlight() {
             if (window.pageYOffset >= sticky) {
                 navbar.classList.add("sticky")
             } else {
                 navbar.classList.remove("sticky");
             }
             mouse.style.opacity = 1 - window.scrollY / 500;
-        }
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - (section.clientHeight - (section.clientHeight*0.5));
+                console.log(pageYOffset);
+                const sectionHeight = section.clientHeight;
+                if(pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            })
+
+            navLi.forEach(li => {
+            li.classList.remove('active');
+            if(li.classList.contains(current)) {
+                li.classList.add('active')
+            }
+        })
+    }
+
 
 });
+
+
+
+
+ 

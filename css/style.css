@@ -321,12 +321,13 @@ header nav .logo a span {
 header nav .nav-right ul {
   display: flex;
   align-items: center;
-  gap: 2em;
+  gap: 0.3em;
 }
 header nav .nav-right ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px 20px;
 }
 header nav .nav-right ul li a, header nav .nav-right ul span {
   font-size: 0.8em;
@@ -426,6 +427,10 @@ header .scroller {
           animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+
+.active {
+  background: var(--emphasis-hover);
 }
 
 .social {
