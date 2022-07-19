@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         useDelay: 'always',
         duration: 1000,
         origin: 'top',
-        viewFactor: 0.6
+        viewFactor: 0.20
     });
     ScrollReveal({distance: '200px'}).reveal('.scroll-img-right', {
         delay: 1000,

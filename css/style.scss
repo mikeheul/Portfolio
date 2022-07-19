@@ -207,9 +207,10 @@ ul {
 }
 
 section {
-    padding: 50px 250px 0 250px;
+    padding: 80px 250px 0 250px;
     min-height: 100vh;
     scroll-margin-top: 50px;
+    overflow: hidden;
 }
 
 .section-heading {
@@ -269,7 +270,18 @@ header {
     align-items: center;
     z-index: 99;
 
+    .burger {
+        position: absolute;
+        font-size: 50px;
+        right: 90px;
+        top: 28px;
+        display: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
     nav {
+
         position: fixed;
         width: 100%;
         padding: 20px 80px 20px 80px;
@@ -449,7 +461,7 @@ header {
 .about {
     .about-img {
         .about-img-container {
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
             border-radius: 10px;
             overflow: hidden;
             img {
@@ -475,7 +487,6 @@ header {
         .text-desc {
             text-align: right;
             padding: 20px;
-            // transform: translateX(150px);
             z-index: 99;
         
             span {
@@ -501,10 +512,86 @@ footer {
     }
 }
 
+@media(max-width: 550px) {
+    .mousey {
+        display: none;
+    }
+}
 
-@media(max-width:1210px) {
+@media(max-width: 690px) {
+    .about-img {
+        max-width: 100% !important;
+    }
+}
+
+@media(max-width:900px) {
+    .circles {
+        display: none;
+    }
+
+    header {
+        .burger {
+            display: inline-block;
+        }
+        nav {
+            display: none;
+        }
+        .header-content {
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-top: 10em;
+            .desc {
+                max-width: 100%;
+                text-align: left;
+            }
+            .name {
+                h1 {
+                    font-size: 8vw;
+                }
+            } 
+        }
+    }
+    .about .col-2 {
+        padding: 40px;
+        .text-desc {
+            text-align: center !important;
+        }
+    }
+}
+
+@media(max-width:1200px) {
+    section {
+        padding: 0;
+        .section-heading {
+            padding-left: 50px;
+            .section-heading-h1 {
+                font-size: 4vw;
+            }
+        }
+    }
+    header .header-content {
+        margin: 100px;
+    }
     .col-2 {
         flex: 0 0 100%;
         max-width: 100%;
+        justify-content: center;
+    }
+    .about .col-2 {
+        padding: 40px;
+    }
+    .about .col-2 .text-desc {
+        text-align: left;
+    }
+    .about-img {
+        margin: auto;
+        max-width: 80%;
+        justify-content: center;
+    }
+}
+
+@media(max-width:1285px) {
+    .section-heading {
+        padding-left: 50px;
     }
 }
