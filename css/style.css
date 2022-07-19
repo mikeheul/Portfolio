@@ -272,10 +272,9 @@ ul {
 }
 
 section {
-  padding: 80px 250px 0 250px;
+  padding: 50px 250px 0 250px;
   min-height: 100vh;
   scroll-margin-top: 50px;
-  overflow: hidden;
 }
 
 .section-heading h1 {
@@ -497,6 +496,7 @@ header .scroller {
 .about .about-img .about-img-container {
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .about .about-img .about-img-container img {
   display: block;
