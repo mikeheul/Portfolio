@@ -210,7 +210,6 @@ section {
     padding: 50px 250px 0 250px;
     min-height: 100vh;
     scroll-margin-top: 50px;
-    // overflow: hidden;
 }
 
 .section-heading {
@@ -256,6 +255,7 @@ section {
         justify-content: center;
         align-items: center;
         z-index: 999;
+
         ion-icon {
             color: var(--emphasis);
         }
@@ -281,7 +281,6 @@ header {
     }
 
     nav {
-
         position: fixed;
         width: 100%;
         padding: 20px 80px 20px 80px;
@@ -289,6 +288,7 @@ header {
         justify-content: space-between;
         align-items: center;
         top: 0;
+
         .logo a {
             font-size: 2em;
             font-weight: 900;
@@ -319,22 +319,6 @@ header {
                     font-weight: 500;
                 }
             }
-
-            // .hover-line::after {
-            //     content: '';
-            //     position: absolute;
-            //     display: block;
-            //     width: 0%;
-            //     height: 1px;
-            //     margin-top: 15px;
-            //     background: rgba(255, 255, 255, 0.338);
-            //     transition: width .7s;
-            // }
-            
-            // .hover-line:hover::after {
-            //     width: 5%;
-            //     transition: width .7s;
-            // }
         }
     }
 
