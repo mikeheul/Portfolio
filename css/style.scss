@@ -273,7 +273,7 @@ header {
     .burger {
         position: absolute;
         font-size: 50px;
-        right: 90px;
+        right: 120px;
         top: 28px;
         display: none;
         color: #fff;
@@ -448,7 +448,7 @@ header {
             border-radius: 10px;
             overflow: hidden;
             box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-            
+
             img {
                 display: block;
                 width: 100%;
@@ -498,8 +498,17 @@ footer {
 }
 
 @media(max-width: 550px) {
+    header .header-content .name h2 span {
+        font-size: 30px;
+    }
     .mousey {
         display: none;
+    }
+}
+
+@media (max-width: 630px) {
+    .section-heading-h1 {
+        font-size: 16px;
     }
 }
 
@@ -549,13 +558,12 @@ footer {
         padding: 0;
         .section-heading {
             padding-left: 50px;
-            .section-heading-h1 {
-                font-size: 4vw;
-            }
         }
     }
     header .header-content {
         margin: 100px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .col-2 {
         flex: 0 0 100%;
