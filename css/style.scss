@@ -455,7 +455,7 @@ header {
 .about {
     .about-img {
         .about-img-container {
-            border-radius: 10px;
+            // border-radius: 10px;
             overflow: hidden;
             box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
@@ -463,7 +463,7 @@ header {
                 display: block;
                 width: 100%;
                 object-fit: cover;
-                border-radius: 10px;
+                // border-radius: 10px;
                 height: 600px;
                 transition: .5s;
                 &:hover {
@@ -496,19 +496,21 @@ header {
 .experiences-container {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     gap: 0px;
     justify-content: center;
     
     .experience-card-container {
-        padding: 10px;
+        padding: 15px;
+
         .experience-card {
-            padding: 30px;
-            height: auto;
+            padding: 50px 30px;
+            height: 100%;
             border: 1px solid rgba(255, 255, 255, 0.256);
-            border-radius: 10px;
+            // border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
             background: rgba(255, 255, 255, 0.094);
-            backdrop-filter: blur( 4px );
+            backdrop-filter: blur( 10px );
             border: 1px solid rgba( 255, 255, 255, 0.18 );
             display: flex;
             flex-direction: column;
@@ -525,7 +527,14 @@ header {
     
             .date {
                 margin: 20px 0;
-                font-weight: 300;
+                font-weight: 500;
+                letter-spacing: 2px;
+            }
+            .text-desc {
+                font-size: 0.8em;
+                span { 
+                    font-size: 2em;
+                }
             }
         }
     }

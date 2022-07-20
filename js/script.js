@@ -20,12 +20,19 @@ window.addEventListener("DOMContentLoaded", (event) => {
         origin: 'top',
         viewFactor: 0.20
     });
-    ScrollReveal({distance: '200px'}).reveal('.scroll-img-right', {
+    ScrollReveal({distance: '50px'}).reveal('.scroll-img-right', {
         delay: 1000,
         duration: 1000,
         origin: 'right',
         viewFactor: 0.4    
     });
+    ScrollReveal({distance: '200px'}).reveal('.scroll-card', {
+        delay: 1000,
+        duration: 2000,
+        interval: 1000,
+        origin: 'left',
+        // scale: 0.50
+    })
 
     window.onscroll = function() { stickyNavHighlight()};
 
