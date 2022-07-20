@@ -26,6 +26,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
         origin: 'right',
         viewFactor: 0.4    
     });
+    ScrollReveal({distance: '50px'}).reveal('.scroll-img-bottom', {
+        delay: 1000,
+        duration: 1000,
+        origin: 'bottom', 
+        interval: 300 
+    });
     ScrollReveal({distance: '200px'}).reveal('.scroll-card', {
         delay: 1000,
         duration: 2000,

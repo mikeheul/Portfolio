@@ -540,6 +540,31 @@ header {
     }
 }
 
+.projects-container {
+    padding: 50px 0px 50px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    .project-item-container {
+        height: 300px;
+        min-width: 300px; 
+        padding: 10px;
+        .project-item {
+            height: 100%;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.164);
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+        
+    }
+}
+
 footer {
     width: 100%;
     height: 80px;
@@ -564,14 +589,14 @@ footer {
     }
     .experience-card {
         h2 {
-            font-size: 15px;
+            font-size: 100%;
         }
     }
 }
 
 @media(max-width: 690px) {
     .section-heading-h1 {
-        font-size: 16px;
+        font-size: 5vw;
     }
     .about-img {
         max-width: 100% !important;
@@ -615,12 +640,6 @@ footer {
 }
 
 @media(max-width:1200px) {
-    section {
-        // padding: 0;
-        .section-heading {
-            padding-left: 50px;
-        }
-    }
     header .header-content {
         margin: 100px;
         padding-left: 0px;
