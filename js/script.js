@@ -46,6 +46,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         const sections = document.querySelectorAll("section"); 
         const navLi = document.querySelectorAll("nav ul li");
         const mouse = document.querySelector(".mousey");
+        const stt = document.querySelector('.stt');
 
         let sticky = 50;
 
@@ -56,6 +57,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
                 navbar.classList.remove("sticky");
             }
             mouse.style.opacity = 1 - window.scrollY / 500;
+            stt.style.opacity = window.scrollY / 500 - 1;
 
             let current = '';
             sections.forEach(section => {

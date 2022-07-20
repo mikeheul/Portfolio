@@ -292,7 +292,6 @@ section {
   font-size: 40px;
   display: flex;
   align-items: center;
-  padding-left: 15px;
 }
 .section-heading h1 > * {
   font-family: "Fira Code";
@@ -309,17 +308,17 @@ section {
 .section-heading h1 .section-heading-h1 {
   position: absolute;
   z-index: 1;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .wrapper {
-  background: #17191d;
+  background: #0c0d0f;
   z-index: 99;
 }
 .wrapper .stt {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 50px;
+  right: 50px;
   height: 40px;
   width: 40px;
   border-radius: 10px;
@@ -328,6 +327,8 @@ section {
   justify-content: center;
   align-items: center;
   z-index: 999;
+  opacity: 0;
+  transition: 0.5s;
 }
 .wrapper .stt ion-icon {
   color: var(--emphasis);
@@ -480,7 +481,7 @@ header .scroller {
 .social {
   position: fixed;
   bottom: 0;
-  left: 80px;
+  left: 40px;
   z-index: 100;
 }
 .social .social-icons {
@@ -635,6 +636,15 @@ footer p, footer span {
   font-family: "Fira Code";
 }
 
+@media (max-width: 600px) {
+  section {
+    padding: 50px 35px 0 35px;
+    margin-left: 0px;
+  }
+  .about .col-2 {
+    padding: 0;
+  }
+}
 @media (max-width: 550px) {
   header .header-content .name h2 span {
     font-size: 30px;
@@ -695,7 +705,7 @@ footer p, footer span {
     justify-content: center;
   }
   .about .col-2 {
-    padding: 40px;
+    padding-bottom: 40px;
   }
   .about .col-2 .text-desc {
     text-align: left;
@@ -714,6 +724,6 @@ footer p, footer span {
 }
 @media (max-width: 1500px) {
   section {
-    padding: 50px 50px 0 50px;
+    padding: 50px 80px 0 8 0px;
   }
 }/*# sourceMappingURL=style.css.map */
