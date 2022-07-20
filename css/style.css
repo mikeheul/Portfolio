@@ -2,6 +2,15 @@
 :root {
   --emphasis: rgb(202, 163, 56);
   --emphasis-hover: rgba(202, 163, 56, 0.265);
+  --background: #252827;
+  --color-primary: #4298C3;
+  --color-light: white;
+  --spacing: 50px;
+  --radius: 4px;
+  --date: 120px;
+  --dotborder: 4px;
+  --dot: 11px;
+  --line: 4px;
 }
 
 @-webkit-keyframes animate {
@@ -527,6 +536,40 @@ header .scroller {
   color: var(--emphasis);
 }
 
+.experiences-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  justify-content: center;
+}
+.experiences-container .experience-card-container {
+  padding: 10px;
+}
+.experiences-container .experience-card-container .experience-card {
+  padding: 30px;
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.256);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  background: rgba(255, 255, 255, 0.094);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.experiences-container .experience-card-container .experience-card:hover {
+  transform: translateY(-10px);
+}
+.experiences-container .experience-card-container .experience-card h2 {
+  margin-bottom: 20px;
+}
+.experiences-container .experience-card-container .experience-card .date {
+  margin: 20px 0;
+  font-weight: 300;
+}
+
 footer {
   width: 100%;
   height: 80px;
@@ -547,13 +590,14 @@ footer p, footer span {
   .mousey {
     display: none;
   }
-}
-@media (max-width: 630px) {
-  .section-heading-h1 {
-    font-size: 16px;
+  .experience-card h2 {
+    font-size: 15px;
   }
 }
 @media (max-width: 690px) {
+  .section-heading-h1 {
+    font-size: 16px;
+  }
   .about-img {
     max-width: 100% !important;
   }
@@ -588,9 +632,6 @@ footer p, footer span {
   }
 }
 @media (max-width: 1200px) {
-  section {
-    padding: 0;
-  }
   section .section-heading {
     padding-left: 50px;
   }
@@ -615,9 +656,15 @@ footer p, footer span {
     max-width: 80%;
     justify-content: center;
   }
+  .experiences-container {
+    flex-direction: column;
+  }
+  .experiences-container .experience-card-container {
+    max-width: 100%;
+  }
 }
-@media (max-width: 1285px) {
-  .section-heading {
-    padding-left: 50px;
+@media (max-width: 1500px) {
+  section {
+    padding: 50px 50px 0 50px;
   }
 }/*# sourceMappingURL=style.css.map */
