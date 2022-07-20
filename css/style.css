@@ -281,7 +281,8 @@ ul {
 }
 
 section {
-  padding: 50px 250px 0 250px;
+  padding: 50px 100px 0 100px;
+  margin-left: 20px;
   min-height: 100vh;
   scroll-margin-top: 50px;
 }
@@ -291,6 +292,7 @@ section {
   font-size: 40px;
   display: flex;
   align-items: center;
+  padding-left: 15px;
 }
 .section-heading h1 > * {
   font-family: "Fira Code";
@@ -311,7 +313,7 @@ section {
 }
 
 .wrapper {
-  background: #22252B;
+  background: #17191d;
   z-index: 99;
 }
 .wrapper .stt {
@@ -565,7 +567,8 @@ header .scroller {
 }
 .experiences-container .experience-card-container .experience-card .date {
   margin: 20px 0;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 14px;
   letter-spacing: 2px;
 }
 .experiences-container .experience-card-container .experience-card .text-desc {
@@ -576,20 +579,21 @@ header .scroller {
 }
 
 .projects-container {
-  padding: 50px 0px 50px 0;
+  padding: 50px 50px 0px 40px;
   justify-content: center;
   flex-wrap: wrap;
 }
 .projects-container .project-item-container {
   height: 300px;
   min-width: 300px;
-  padding: 10px;
+  padding: 0px;
 }
 .projects-container .project-item-container .project-item {
+  position: relative;
   height: 100%;
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.164);
   cursor: pointer;
+  overflow: hidden;
 }
 .projects-container .project-item-container .project-item img {
   width: 100%;
@@ -598,6 +602,24 @@ header .scroller {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  transition: 0.5s;
+  display: block;
+}
+.projects-container .project-item-container .project-item .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.879);
+  opacity: 0;
+  transition: 0.5s;
+}
+.projects-container .project-item-container:hover .project-item img {
+  transform: scale(1.1);
+}
+.projects-container .project-item-container:hover .overlay {
+  opacity: 1;
 }
 
 footer {
