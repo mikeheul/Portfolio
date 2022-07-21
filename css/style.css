@@ -560,9 +560,6 @@ header .scroller {
   flex-direction: column;
   transition: 0.5s;
 }
-.experiences-container .experience-card-container .experience-card:hover {
-  transform: translateY(-10px);
-}
 .experiences-container .experience-card-container .experience-card h2 {
   margin-bottom: 20px;
 }
