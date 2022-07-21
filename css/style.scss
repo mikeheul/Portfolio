@@ -576,14 +576,21 @@ header {
                 height: 100%;
                 width: 100%;
                 top:0; left:0;
-                background: rgba(0, 0, 0, 0.879);
+                background: rgba(0, 0, 0, 0.717);
                 opacity: 0;
                 transition: .5s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                ion-icon {
+                    font-size: 50px;
+                }
             }
         }
         &:hover {
             .project-item img {
-                transform: scale(1.1);
+                // transform: scale(1.1);
             }
             .overlay {
                 opacity: 1;
