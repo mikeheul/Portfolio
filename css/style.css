@@ -656,6 +656,22 @@ header .scroller {
   left: 0;
 }
 
+.contact-text {
+  max-width: 50%;
+}
+.contact-text .text-desc {
+  margin: 40px 0 40px 0;
+}
+.contact-text .btn {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.contact-text .btn ion-icon {
+  font-size: 1.5em;
+}
+
 footer {
   width: 100%;
   height: 80px;
@@ -695,6 +711,21 @@ footer p, footer span {
   }
   .about-img {
     max-width: 100% !important;
+  }
+  .contact-text {
+    max-width: 100%;
+  }
+  .about .col-2 {
+    padding: 20px 0 20px 0 !important;
+  }
+  .about .col-2 .text-desc {
+    padding: 0px !important;
+  }
+  .experiences-container .experience-card-container {
+    padding: 15px 0 15px 0;
+  }
+  .projects-container .project-item-container {
+    padding: 25px;
   }
 }
 @media (max-width: 900px) {
