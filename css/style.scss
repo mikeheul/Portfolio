@@ -459,6 +459,7 @@ header {
 }
 
 .about {
+    overflow: hidden;
     .about-img {
         .about-img-container {
             // border-radius: 10px;
@@ -632,6 +633,8 @@ header {
 
 .contact-text {
     max-width: 50%;
+    // text-align: center;
+    // margin: auto;
     .text-desc {
         margin: 40px 0 40px 0;
     }
@@ -707,7 +710,7 @@ footer {
     }
 
     .projects-container .project-item-container {
-        padding: 25px;
+        padding: 5px;
     }
 }
 
